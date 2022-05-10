@@ -8,9 +8,10 @@ public class GameManager : MonoBehaviour
 {
     public GameObject choicePanel;
     public GameObject finalPanel;
-    public Animator anim;
-    public string WrongChoiceText;
-    public string RightChoiceText;
+    public Animator[] anim;
+    public string badChoiceText;
+    public string goodChoiceText;
+    public string neturalChoiceText;
     public Text finalText;
     public static GameManager instance;
 
@@ -45,20 +46,33 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void selectedChoiceButton([SerializeField] bool isRightChoice)
+    public void selectedChoiceButton(string choice)
     {
-        if(isRightChoice)
-        {
-            anim.SetTrigger("Choice1");
-            finalText.text = RightChoiceText;
-            Time.timeScale = 1;
-        }else
-        {
-            anim.SetTrigger("Choice2");
-            finalText.text = WrongChoiceText;
-            Time.timeScale = 1;
-        }
+        setAnimTrigger(choice);
+        Time.timeScale = 1;
         hideChoicePanel();
+    }
+
+    private void setAnimTrigger(string choice)
+    {
+        for(int i=0; i<=anim.Length; i++)
+        {
+            if (choice == "good")
+            {
+                anim[i].SetTrigger("good");
+                finalText.text = goodChoiceText;
+            }
+            else if (choice == "bad")
+            {
+                anim[i].SetTrigger("bad");
+                finalText.text = badChoiceText;
+            }
+            else if (choice == "neutral")
+            {
+                anim[i].SetTrigger("neutral");
+                finalText.text = neturalChoiceText;
+            }
+        }
     }
 
     public void hideChoicePanel()
