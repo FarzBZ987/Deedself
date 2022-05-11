@@ -11,8 +11,10 @@ public class GameManager : MonoBehaviour
     public Animator[] anim;
     public string badChoiceText;
     public string goodChoiceText;
-    public string neturalChoiceText;
+    public string neutralChoiceText;
     public Text finalText;
+
+    
     public static GameManager instance;
 
 
@@ -35,17 +37,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-  
-
-    public void wrongChoice()
-    {
-        
-    }
-    public void rightChoice()
-    {
-        
-    }
-
     public void selectedChoiceButton(string choice)
     {
         setAnimTrigger(choice);
@@ -55,24 +46,30 @@ public class GameManager : MonoBehaviour
 
     private void setAnimTrigger(string choice)
     {
-        for(int i=0; i<=anim.Length; i++)
-        {
-            if (choice == "good")
+        if(anim.Length > 0) {
+            
+            for (int i = 0; i < anim.Length; i++)
             {
-                anim[i].SetTrigger("good");
-                finalText.text = goodChoiceText;
-            }
-            else if (choice == "bad")
-            {
-                anim[i].SetTrigger("bad");
-                finalText.text = badChoiceText;
-            }
-            else if (choice == "neutral")
-            {
-                anim[i].SetTrigger("neutral");
-                finalText.text = neturalChoiceText;
+                Debug.Log(i.ToString());
+                anim[i].SetTrigger(choice);
+                switch (choice)
+                {
+                    case "good":
+                        finalText.text = goodChoiceText;
+                        break;
+                    case "neutral":
+                        finalText.text = neutralChoiceText;
+                        break;
+                    case "bad":
+                        finalText.text = badChoiceText;
+                        break;
+
+                    default:
+                        break;
+                }
             }
         }
+        
     }
 
     public void hideChoicePanel()
