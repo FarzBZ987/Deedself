@@ -13,10 +13,6 @@ public class VolumeSlider : MonoBehaviour
     }
 
     public SliderType selectedSliderType;
-    private void Update()
-    {
-        
-    }
 
     public void onSliderChange()
     {

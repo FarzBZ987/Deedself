@@ -9,17 +9,17 @@ public class GameData : MonoBehaviour
 
     [Header("Chapter 1 scores")]
     public int ch1ScoreGood;
-    public int ch1ScoreNeutral;
+    //public int ch1ScoreNeutral;
     public int ch1ScoreBad;
 
     [Header("Chapter 2 scores")]
     public int ch2ScoreGood;
-    public int ch2ScoreNeutral;
+    //public int ch2ScoreNeutral;
     public int ch2ScoreBad;
 
     [Header("Chapter 3 scores")]
     public int ch3ScoreGood;
-    public int ch3ScoreNeutral;
+    //public int ch3ScoreNeutral;
     public int ch3ScoreBad;
 
     public static GameData instance;

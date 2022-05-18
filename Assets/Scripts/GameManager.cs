@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public Animator[] anim;
     public string badChoiceText;
     public string goodChoiceText;
-    public string neutralChoiceText;
+    //public string neutralChoiceText;
     public Text finalText;
 
     
@@ -57,9 +57,9 @@ public class GameManager : MonoBehaviour
                     case "good":
                         finalText.text = goodChoiceText;
                         break;
-                    case "neutral":
-                        finalText.text = neutralChoiceText;
-                        break;
+                    //case "neutral":
+                        //finalText.text = neutralChoiceText;
+                        //break;
                     case "bad":
                         finalText.text = badChoiceText;
                         break;
@@ -69,7 +69,6 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        
     }
 
     public void hideChoicePanel()
