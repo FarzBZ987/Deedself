@@ -43,6 +43,7 @@ public class MainMenu : MonoBehaviour
 
     public void startGame()
     {
+        SceneManager.LoadScene("NewGame");
     }
 
     public void exitgame()
