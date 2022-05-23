@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
@@ -47,5 +48,15 @@ public class MainMenu : MonoBehaviour
     public void exitgame()
     {
         Application.Quit();
+    }
+
+    public void setResolution1920()
+    {
+        Screen.SetResolution(1920, 1080, Screen.fullScreen);
+    }
+
+    public void setResolution1280()
+    {
+        Screen.SetResolution(1280, 720, Screen.fullScreen = false);
     }
 }
