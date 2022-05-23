@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject choicePanel;
     public GameObject finalPanel;
+    public GameObject pausePanel;
     public Animator[] anim;
     public string badChoiceText;
     public string goodChoiceText;
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     
     public static GameManager instance;
 
+    
 
     // Start is called before the first frame update
     private void Awake()
@@ -31,6 +33,7 @@ public class GameManager : MonoBehaviour
         }
         hideChoicePanel();
         finalPanel.SetActive(false);
+        pausePanel.SetActive(false);
     }
     void Start()
     {
@@ -76,6 +79,23 @@ public class GameManager : MonoBehaviour
         choicePanel.SetActive(false);
     }
 
+    public void Pause()
+    {
+        pausePanel.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void Resume()
+    {
+        Time.timeScale = 1;
+        pausePanel.SetActive(false);
+    }
+
+    public void BackToMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
+    }
     public void showChoicePanel(){
         choicePanel.SetActive(true);
         Time.timeScale = 0;

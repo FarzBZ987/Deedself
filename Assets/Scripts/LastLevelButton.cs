@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class LastLevelButton : MonoBehaviour
 {
     [SerializeField] private int buttonLevel;
-    // Update is called once per frame
+    
+    //This script is just to disable the button if the last level isn't played yet
     void Update()
     {
         if(GameData.instance.lastLevelPlayed > buttonLevel)

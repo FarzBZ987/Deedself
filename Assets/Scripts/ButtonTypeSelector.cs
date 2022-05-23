@@ -17,10 +17,12 @@ public class ButtonTypeSelector : MonoBehaviour
         if(buttonType == ButtonType.GOOD)
         {
             return "good";
-        }else if (buttonType == ButtonType.NEUTRAL)
+        }
+        /*else if (buttonType == ButtonType.NEUTRAL)
         {
             return "neutral";
-        }else if (buttonType == ButtonType.BAD)
+        }*/
+        else if (buttonType == ButtonType.BAD)
         {
             return "bad";
         }
