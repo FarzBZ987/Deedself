@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LastSceneSaver : MonoBehaviour
+public class LastLevePlayed : MonoBehaviour
 {
     [SerializeField] private int CurrentLevel;
     
@@ -12,6 +12,6 @@ public class LastSceneSaver : MonoBehaviour
         {
             GameData.instance.SetLastLevel(CurrentLevel);
         }
-        
+        Destroy(gameObject);
     }
 }
