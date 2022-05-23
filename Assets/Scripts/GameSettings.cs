@@ -25,12 +25,9 @@ public class GameSettings : MonoBehaviour
             PlayerPrefs.SetInt("hasRun", 1);
             PlayerPrefs.SetFloat("bgmVolume", 1f);
             PlayerPrefs.SetFloat("sfxVolume", 1f);
-            LoadSettings();
         }
-        else
-        {
-            LoadSettings();
-        }
+        LoadSettings();
+        
         DontDestroyOnLoad(this);
     }
 

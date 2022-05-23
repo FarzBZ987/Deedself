@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,10 +6,24 @@ using UnityEngine.SceneManagement;
 public class GameData : MonoBehaviour
 {
 
-    public string lastLevelPlayed;
+    public int lastLevelPlayed;
 
     [Header("Chapter 1 scores")]
     public int ch1ScoreGood;
+
+    internal bool isCurrentLevelHigher(int currentLevel)
+    {
+        if (lastLevelPlayed <= currentLevel)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+        
+    }
+
     //public int ch1ScoreNeutral;
     public int ch1ScoreBad;
 
@@ -35,9 +50,23 @@ public class GameData : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(this);
+        if (!PlayerPrefs.HasKey("LastLevel"))
+        {
+            SetLastLevel(1);
+        }
+        else
+        {
+            getLastLevel();
+        }
+        
     }
-
-    public void lastSceneUpdate(){
-        lastLevelPlayed = SceneManager.GetActiveScene().ToString();
+    
+    public void SetLastLevel(int LevelKey){
+        PlayerPrefs.SetInt("LastLevel", LevelKey);
+        lastLevelPlayed = LevelKey;
+    }
+    private void getLastLevel()
+    {
+        lastLevelPlayed = PlayerPrefs.GetInt("LastLevel");
     }
 }
