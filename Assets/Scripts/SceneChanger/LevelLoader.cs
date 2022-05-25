@@ -17,7 +17,7 @@ public class LevelLoader : MonoBehaviour
         }
         else
         {
-            Debug.Log("SceneDataBringer not found! Playing level 1");
+            Debug.Log("SceneDataBringer not found! Playing part 1 level 1");
             LevelName = "Part 1 - Level 1";
         }
 
