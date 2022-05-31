@@ -20,7 +20,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: -3.14, y: -1.52, z: 0.30226398}
+        value: {x: -2.82, y: -1.11, z: 0.30226398}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -28,8 +28,8 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 1.5
-        value: {x: 3.55, y: -1.52, z: 0.30226398}
+        time: 1.75
+        value: {x: 4.07, y: -0.94, z: 0.30226398}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -55,7 +55,16 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1.6666666
+        time: 1.9166666
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.2833333
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -66,7 +75,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_FlipY
+    attribute: m_FlipX
     path: BpkBall
     classID: 212
     script: {fileID: 0}
@@ -87,7 +96,7 @@ AnimationClip:
       isPPtrCurve: 0
     - serializedVersion: 2
       path: 1585236170
-      attribute: 1444465954
+      attribute: 555744692
       script: {fileID: 0}
       typeID: 212
       customType: 0
@@ -98,7 +107,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.6666666
+    m_StopTime: 2.2833333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -119,7 +128,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -3.14
+        value: -2.82
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -127,8 +136,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.5
-        value: 3.55
+        time: 1.75
+        value: 4.07
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -147,7 +156,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -1.52
+        value: -1.11
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -155,8 +164,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.5
-        value: -1.52
+        time: 1.75
+        value: -0.94
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -183,7 +192,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.5
+        time: 1.75
         value: 0.30226398
         inSlope: 0
         outSlope: 0
@@ -211,7 +220,16 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1.6666666
+        time: 1.9166666
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.2833333
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -222,7 +240,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_FlipY
+    attribute: m_FlipX
     path: BpkBall
     classID: 212
     script: {fileID: 0}
