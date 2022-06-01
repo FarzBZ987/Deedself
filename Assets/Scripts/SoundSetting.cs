@@ -25,15 +25,17 @@ public class SoundSetting : MonoBehaviour
 
     private void Update()
     {
-        if(audioSourceType == "BGM")
+        if(GameSettings.instance != null)
         {
-            audioSource.volume = GameSettings.instance.bgmVolume;
+            if (audioSourceType == "BGM")
+            {
+                audioSource.volume = GameSettings.instance.bgmVolume;
+            }
+            else if (audioSourceType == "SFX")
+            {
+                audioSource.volume = GameSettings.instance.sfxVolume;
+            }
         }
-        else if(audioSourceType == "SFX")
-        {
-            audioSource.volume = GameSettings.instance.sfxVolume;
-        }
-        
     }
     private string checkSoundType(SoundType soundType)
     {

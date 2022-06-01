@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
     public void selectedChoiceButton(string choice)
     {
         setAnimTrigger(choice);
-        Time.timeScale = 1;
+        
         hideChoicePanel();
     }
 
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
             
             for (int i = 0; i < anim.Length; i++)
             {
-                Debug.Log(i.ToString());
+                //Debug.Log(i.ToString());
                 anim[i].SetTrigger(choice);
                 switch (choice)
                 {
@@ -82,23 +82,23 @@ public class GameManager : MonoBehaviour
     public void Pause()
     {
         pausePanel.SetActive(true);
-        Time.timeScale = 0;
+        
     }
 
     public void Resume()
     {
-        Time.timeScale = 1;
+        
         pausePanel.SetActive(false);
     }
 
     public void BackToMenu()
     {
-        Time.timeScale = 1;
+        
         SceneManager.LoadScene("MainMenu");
     }
     public void showChoicePanel(){
         choicePanel.SetActive(true);
-        Time.timeScale = 0;
+        
     }
     public void showFinalPanel()
     {
