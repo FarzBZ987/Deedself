@@ -5,24 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
-
-    //Shown on inspector, just select the level and the part
-    [SerializeField, Range(1, 3)] private int Part;
-    [SerializeField, Range(1, 7)] private int Level;
-
     //This variable is only used to load the scene based on its name
     private string LevelName;
-    
-    void Start()
+
+    public void LoadLevel()
     {
-        //Declaring the level name
-        LevelName = "Part " + Part.ToString() + " - Level " + Level.ToString();
+        //Declaring the level name, look at SceneDataBringer.cs
+        if(SceneDataBringer.instance != null)
+        {
+            LevelName = SceneDataBringer.instance.getLevelAndPartAsString();
+        }
+        else
+        {
+            Debug.Log("SceneDataBringer not found! Playing part 1 level 1");
+            LevelName = "Part 1 - Level 1";
+        }
 
         //Log to see the name, could be safely deleted
         Debug.Log("Level Name : " + LevelName);
-    }
-    public void LoadLevel()
-    {
         //Load the level based on the declared part and level before
         SceneManager.LoadScene(LevelName);
     }
