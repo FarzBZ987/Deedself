@@ -434,6 +434,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 359074783}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: addScorePart1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &253601361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,7 +1056,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 729acab44ba926c4dabdd7f440b94027, type: 3}
     m_FontSize: 61
     m_FontStyle: 0
     m_BestFit: 0
@@ -1123,7 +1135,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 729acab44ba926c4dabdd7f440b94027, type: 3}
     m_FontSize: 61
     m_FontStyle: 0
     m_BestFit: 0
@@ -1549,7 +1561,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 729acab44ba926c4dabdd7f440b94027, type: 3}
     m_FontSize: 61
     m_FontStyle: 0
     m_BestFit: 0
@@ -1628,7 +1640,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 729acab44ba926c4dabdd7f440b94027, type: 3}
     m_FontSize: 61
     m_FontStyle: 0
     m_BestFit: 0
@@ -1707,7 +1719,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 729acab44ba926c4dabdd7f440b94027, type: 3}
     m_FontSize: 61
     m_FontStyle: 0
     m_BestFit: 0
@@ -1999,6 +2011,7 @@ GameObject:
   - component: {fileID: 1444219914}
   - component: {fileID: 1444219913}
   - component: {fileID: 1444219912}
+  - component: {fileID: 1444219915}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -2069,7 +2082,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1444219913}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1444219915}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: sceneChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1444219913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2108,6 +2133,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444219910}
   m_CullTransparentMesh: 1
+--- !u!114 &1444219915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444219910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e88811ef843759f4aba3a0986c33e281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isNewGame: 0
+  isContinue: 0
+  part: 1
+  level: 2
 --- !u!1 &1458172980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2321,7 +2362,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 729acab44ba926c4dabdd7f440b94027, type: 3}
     m_FontSize: 82
     m_FontStyle: 0
     m_BestFit: 0
@@ -2372,6 +2413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentLevel: 1
+  CurrentPart: 0
 --- !u!4 &1582053016
 Transform:
   m_ObjectHideFlags: 0
@@ -2637,6 +2679,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1993764954}
         m_TargetAssemblyTypeName: ButtonTypeSelector, Assembly-CSharp
         m_MethodName: buttonAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 359074783}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: addScorePart1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

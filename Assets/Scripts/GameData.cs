@@ -7,23 +7,11 @@ public class GameData : MonoBehaviour
 {
 
     public int lastLevelPlayed;
+    public int lastPartPlayed;
+
 
     [Header("Chapter 1 scores")]
     public int ch1ScoreGood;
-
-    internal bool isCurrentLevelHigher(int currentLevel)
-    {
-        if (lastLevelPlayed <= currentLevel)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-        
-    }
-
     //public int ch1ScoreNeutral;
     public int ch1ScoreBad;
 
@@ -50,23 +38,44 @@ public class GameData : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(this);
-        if (!PlayerPrefs.HasKey("LastLevel"))
+        if (!PlayerPrefs.HasKey("LastLevel") || !PlayerPrefs.HasKey("LastPart"))
         {
-            SetLastLevel(1);
+            SetLastLevel(1, 1);
         }
-        else
-        {
-            getLastLevel();
-        }
+        getLastLevel();
+        
         
     }
     
-    public void SetLastLevel(int LevelKey){
+    public void SetLastLevel(int LevelKey, int PartKey){
         PlayerPrefs.SetInt("LastLevel", LevelKey);
         lastLevelPlayed = LevelKey;
+        PlayerPrefs.SetInt("LastPart", PartKey);
+        lastPartPlayed = PartKey;
     }
     private void getLastLevel()
     {
         lastLevelPlayed = PlayerPrefs.GetInt("LastLevel");
+        lastPartPlayed = PlayerPrefs.GetInt("LastPart");
+    }
+    internal bool isCurrentLevelAndPartHigher(int currentLevel, int currentPart)
+    {
+        if (lastPartPlayed < currentPart)
+        {
+            
+            return true;
+        }
+        else
+        {
+            if (lastLevelPlayed < currentLevel)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
     }
 }

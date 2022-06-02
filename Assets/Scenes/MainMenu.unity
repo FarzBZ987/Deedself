@@ -1005,6 +1005,7 @@ GameObject:
   - component: {fileID: 196371053}
   - component: {fileID: 196371052}
   - component: {fileID: 196371051}
+  - component: {fileID: 196371054}
   m_Layer: 5
   m_Name: ButtonLanjutkan
   m_TagString: Untagged
@@ -1072,7 +1073,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 196371052}
   m_OnClick:
     m_PersistentCalls:
@@ -1115,6 +1116,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 196371049}
   m_CullTransparentMesh: 1
+--- !u!114 &196371054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196371049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e88811ef843759f4aba3a0986c33e281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isNewGame: 0
+  isContinue: 1
+  part: 0
+  level: 0
 --- !u!1 &200192399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,6 +1304,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalizationKey: MainMenu.Lanjutkan
+--- !u!1 &244916277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 244916279}
+  - component: {fileID: 244916278}
+  m_Layer: 0
+  m_Name: SceneDataBringer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &244916278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244916277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235cfd1687d3f0f44beca0ab34156219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &244916279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244916277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.868671, y: 4.727335, z: -135.89977}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &249578187
 GameObject:
   m_ObjectHideFlags: 0
@@ -4522,6 +4582,7 @@ GameObject:
   - component: {fileID: 986171518}
   - component: {fileID: 986171517}
   - component: {fileID: 986171516}
+  - component: {fileID: 986171519}
   m_Layer: 5
   m_Name: ButtonMulai
   m_TagString: Untagged
@@ -4594,9 +4655,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1485366291}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: startGame
+      - m_Target: {fileID: 986171519}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: sceneChange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4644,6 +4705,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986171514}
   m_CullTransparentMesh: 1
+--- !u!114 &986171519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986171514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e88811ef843759f4aba3a0986c33e281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isNewGame: 1
+  isContinue: 0
+  part: 0
+  level: 0
 --- !u!1 &1048367196
 GameObject:
   m_ObjectHideFlags: 0
@@ -6275,6 +6352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lastLevelPlayed: 0
+  lastPartPlayed: 0
   ch1ScoreGood: 0
   ch1ScoreBad: 0
   ch2ScoreGood: 0

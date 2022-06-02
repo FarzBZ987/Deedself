@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
     [HideInInspector] public bool isNewGame;
+    [HideInInspector] public bool isContinue;
     [HideInInspector, Range(1, 3)] public int part;
     [HideInInspector, Range(1, 7)] public int level;
 
@@ -19,9 +20,9 @@ public class SceneChanger : MonoBehaviour
         {
             part = 1;
         }
-        if (level > 7)
+        if (level > 8)
         {
-            level = 7;
+            level = 8;
         }
         if (level < 1)
         {
@@ -34,8 +35,14 @@ public class SceneChanger : MonoBehaviour
         }
         else
         {
+            if (isContinue)
+            {
+                level = PlayerPrefs.GetInt("LastLevel");
+                part = PlayerPrefs.GetInt("LastPart");
+            }
             SceneDataBringer.instance.setPartAndLevel(part, level);
-            SceneManager.LoadScene("");
+            SceneManager.LoadScene("NewGame");
+            
         }
     }
 }

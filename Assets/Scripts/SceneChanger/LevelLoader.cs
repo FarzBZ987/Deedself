@@ -6,8 +6,12 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     //This variable is only used to load the scene based on its name
-    private string LevelName;
-
+    [SerializeField] private string LevelName;
+    [SerializeField] private float LoadDelay = 5;
+    private void Update()
+    {
+        Invoke("LoadLevel", LoadDelay);
+    }
     public void LoadLevel()
     {
         //Declaring the level name, look at SceneDataBringer.cs
@@ -25,5 +29,8 @@ public class LevelLoader : MonoBehaviour
         Debug.Log("Level Name : " + LevelName);
         //Load the level based on the declared part and level before
         SceneManager.LoadScene(LevelName);
+        
+        
     }
+    
 }

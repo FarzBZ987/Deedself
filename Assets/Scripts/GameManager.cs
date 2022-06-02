@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public Animator[] anim;
     public string badChoiceText;
     public string goodChoiceText;
+
+    private string lastButtonChoice;
     //public string neutralChoiceText;
     public Text finalText;
 
@@ -43,6 +45,7 @@ public class GameManager : MonoBehaviour
     public void selectedChoiceButton(string choice)
     {
         setAnimTrigger(choice);
+        lastButtonChoice = choice;
         
         hideChoicePanel();
     }
@@ -107,7 +110,66 @@ public class GameManager : MonoBehaviour
 
     public void restartGame()
     {
-        Time.timeScale = 1;
+        if(lastButtonChoice == "good")
+        {
+            if(SceneDataBringer.instance.getPartStringRoman() == "I")
+            {
+                GameData.instance.ch1ScoreGood--;
+            }else if(SceneDataBringer.instance.getPartStringRoman() == "II")
+            {
+                GameData.instance.ch2ScoreGood--;
+            }else if (SceneDataBringer.instance.getPartStringRoman() == "III")
+            {
+                GameData.instance.ch3ScoreGood--;
+            }
+        }
+        if (lastButtonChoice == "bad")
+        {
+            if (SceneDataBringer.instance.getPartStringRoman() == "I")
+            {
+                GameData.instance.ch1ScoreBad--;
+            }
+            else if (SceneDataBringer.instance.getPartStringRoman() == "II")
+            {
+                GameData.instance.ch2ScoreBad--;
+            }
+            else if (SceneDataBringer.instance.getPartStringRoman() == "III")
+            {
+                GameData.instance.ch3ScoreBad--;
+            }
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void addScorePart1()
+    {
+        if (lastButtonChoice == "good")
+        {
+            GameData.instance.ch1ScoreGood++;
+        }
+        else if (lastButtonChoice == "bad") 
+        {
+            GameData.instance.ch1ScoreBad++;
+        }
+    }public void addScorePart2()
+    {
+        if (lastButtonChoice == "good")
+        {
+            GameData.instance.ch2ScoreGood++;
+        }
+        else if (lastButtonChoice == "bad") 
+        {
+            GameData.instance.ch2ScoreBad++;
+        }
+    }public void addScorePart3()
+    {
+        if (lastButtonChoice == "good")
+        {
+            GameData.instance.ch3ScoreGood++;
+        }
+        else if (lastButtonChoice == "bad") 
+        {
+            GameData.instance.ch3ScoreBad++;
+        }
     }
 }

@@ -15,8 +15,13 @@ public class SceneChangerEditor : Editor
         sceneChanger.isNewGame = EditorGUILayout.Toggle("New game?", sceneChanger.isNewGame);
         if (!sceneChanger.isNewGame)
         {
-            sceneChanger.part = EditorGUILayout.IntField("Level Part", sceneChanger.part);
-            sceneChanger.level = EditorGUILayout.IntField("Level Number", sceneChanger.level);
+            sceneChanger.isContinue = EditorGUILayout.Toggle("Continue?", sceneChanger.isContinue);
+            if (!sceneChanger.isContinue)
+            {
+                sceneChanger.part = EditorGUILayout.IntField("Level Part", sceneChanger.part);
+                sceneChanger.level = EditorGUILayout.IntField("Level Number", sceneChanger.level);
+            }
+            
         }
     }
     
