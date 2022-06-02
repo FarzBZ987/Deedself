@@ -7,8 +7,8 @@ public class LastLevelPlayed : MonoBehaviour
     //This script is used for saving last level
     [SerializeField] private int CurrentLevel;
     [SerializeField] private int CurrentPart;
-    
-    private void Start()
+
+    private void Update()
     {
         if (GameData.instance.isCurrentLevelAndPartHigher(CurrentLevel, CurrentPart))
         {

@@ -592,7 +592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &486890359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,13 +600,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486890358}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e653e9dd626d23c46a5404fc3ef274aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentLevel: 2
-  CurrentPart: 0
+  CurrentPart: 1
 --- !u!4 &486890360
 Transform:
   m_ObjectHideFlags: 0
@@ -1717,6 +1717,14 @@ PrefabInstance:
       propertyPath: m_Text
       value: Buang botol air ke tempat sampah
       objectReference: {fileID: 0}
+    - target: {fileID: 2237802850041821778, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1654836728}
+    - target: {fileID: 2237802850041821778, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: sceneChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
 --- !u!1 &1654836723 stripped
@@ -1745,6 +1753,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1654836727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2237802850041821788, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+  m_PrefabInstance: {fileID: 1654836722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1654836728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654836727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e88811ef843759f4aba3a0986c33e281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isNewGame: 0
+  isContinue: 0
+  part: 1
+  level: 3
 --- !u!1 &1666075622
 GameObject:
   m_ObjectHideFlags: 0
