@@ -21,7 +21,6 @@ public class SceneChangerEditor : Editor
                 sceneChanger.part = EditorGUILayout.IntField("Level Part", sceneChanger.part);
                 sceneChanger.level = EditorGUILayout.IntField("Level Number", sceneChanger.level);
             }
-            
         }
     }
     

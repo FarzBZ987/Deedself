@@ -42,7 +42,7 @@ public class SceneChanger : MonoBehaviour
             }
             SceneDataBringer.instance.setPartAndLevel(part, level);
             SceneManager.LoadScene("NewGame");
-            
+
         }
     }
 }

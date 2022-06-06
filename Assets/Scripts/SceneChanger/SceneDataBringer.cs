@@ -64,6 +64,5 @@ public class SceneDataBringer : MonoBehaviour
             default:
                 return null;
         }
-        
     }
 }

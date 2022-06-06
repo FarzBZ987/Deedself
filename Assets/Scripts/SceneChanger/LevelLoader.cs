@@ -28,9 +28,7 @@ public class LevelLoader : MonoBehaviour
         //Log to see the name, could be safely deleted
         Debug.Log("Level Name : " + LevelName);
         //Load the level based on the declared part and level before
-        SceneManager.LoadScene(LevelName);
-        
-        
+        SceneManager.LoadScene(LevelName);        
     }
-    
+
 }
