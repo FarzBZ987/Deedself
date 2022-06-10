@@ -6,13 +6,15 @@ public class LastLevelPlayed : MonoBehaviour
 {
     //This script is used for saving last level
     [SerializeField] private int CurrentLevel;
-    
-    private void Start()
+    [SerializeField] private int CurrentPart;
+
+    private void Update()
     {
-        if (GameData.instance.isCurrentLevelHigher(CurrentLevel))
+        if (GameData.instance.isCurrentLevelAndPartHigher(CurrentLevel, CurrentPart))
         {
-            GameData.instance.SetLastLevel(CurrentLevel);
+            GameData.instance.SetLastLevel(CurrentLevel, CurrentPart);
         }
+        
         Destroy(gameObject);
     }
 }
