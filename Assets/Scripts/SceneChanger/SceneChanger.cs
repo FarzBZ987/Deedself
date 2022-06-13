@@ -35,14 +35,25 @@ public class SceneChanger : MonoBehaviour
         }
         else
         {
-            if (isContinue)
+            if (GameData.instance != null)
             {
-                level = PlayerPrefs.GetInt("LastLevel");
-                part = PlayerPrefs.GetInt("LastPart");
-            }
-            SceneDataBringer.instance.setPartAndLevel(part, level);
-            SceneManager.LoadScene("NewGame");
-
+                GameData.instance.LoadData();
+                if (isContinue)
+                {
+                    level = GameData.instance.LastLevel;
+                    part = GameData.instance.LastPart;
+                    if(level != 1 && part != 1)
+                    {
+                        SceneDataBringer.instance.setPartAndLevel(part, level);
+                        SceneManager.LoadScene("NewGame");
+                    }
+                }
+                else
+                {
+                    SceneDataBringer.instance.setPartAndLevel(part, level);
+                    SceneManager.LoadScene("NewGame");
+                }
+            }   
         }
     }
 }
