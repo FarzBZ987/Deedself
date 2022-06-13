@@ -42,4 +42,25 @@ public class GameSettings : MonoBehaviour
         PlayerPrefs.SetFloat("bgmVolume", bgmVolume);
         PlayerPrefs.SetFloat("sfxVolume", sfxVolume);
     }
+
+    public void sfxDown()
+    {
+        sfxVolume = sfxVolume - 0.1f < 0 ? 0 : sfxVolume - 0.1f;
+        SaveSettings();
+    }
+    public void sfxUp()
+    {
+        sfxVolume = sfxVolume + 0.1f > 1 ? 1 : sfxVolume + 0.1f;
+        SaveSettings();
+    }
+    public void bgmDown()
+    {
+        bgmVolume = bgmVolume - 0.1f < 0 ? 0 : bgmVolume - 0.1f;
+        SaveSettings();
+    }
+    public void bgmUp()
+    {
+        bgmVolume = bgmVolume + 0.1f > 1 ? 1 : bgmVolume + 0.1f;
+        SaveSettings();
+    }
 }
