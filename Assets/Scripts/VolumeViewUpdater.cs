@@ -11,7 +11,7 @@ namespace Assets.Scripts
         {
             BGM, SFX
         }
-        private VolumeType volumeType;
+        [SerializeField] private VolumeType volumeType;
         private Text text;
         void Start()
         {

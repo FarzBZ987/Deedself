@@ -78,4 +78,64 @@ public class GameData : MonoBehaviour
         }
         
     }
+    public bool CheckTotalScoreIs8(int part)
+    {
+        switch (part)
+        {
+            case 1:
+                if(ch1ScoreBad + ch1ScoreGood == 8)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            case 2:
+                if (ch2ScoreBad + ch2ScoreGood == 8)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            default:
+                return false;
+        }
+    }
+
+    public int getScoring(int part)
+    {
+        switch (part)
+        {
+            case 1:
+                if(Mathf.Abs(ch1ScoreBad - ch1ScoreGood) <= 2)
+                {
+                    return 1;
+                }
+                else if(ch1ScoreGood > ch1ScoreBad){
+                    return 2;
+                }
+                else
+                {
+                    return 0;
+                }
+            case 2:
+                if (Mathf.Abs(ch2ScoreBad - ch2ScoreGood) <= 2)
+                {
+                    return 1;
+                }
+                else if (ch2ScoreGood > ch2ScoreBad)
+                {
+                    return 2;
+                }
+                else
+                {
+                    return 0;
+                }
+            default:
+                return 0;
+        }
+    }
 }
