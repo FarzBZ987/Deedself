@@ -12,8 +12,9 @@ public class LastLevelPlayed : MonoBehaviour
     {
         if (GameData.instance.isCurrentLevelAndPartHigher(CurrentLevel, CurrentPart))
         {
-            GameData.instance.SetLastLevel(CurrentLevel, CurrentPart);
+            GameData.instance.SetHighestLevel(CurrentLevel, CurrentPart);
         }
+        GameData.instance.SaveCurrentData(CurrentLevel, CurrentPart);
         
         Destroy(gameObject);
     }
