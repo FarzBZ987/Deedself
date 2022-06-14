@@ -768,8 +768,8 @@ MonoBehaviour:
   pausePanel: {fileID: 1642551511}
   anim:
   - {fileID: 699920915}
-  badChoiceText: 'Hei, sopankah begitu?! '
-  goodChoiceText: Selalu ingat untuk bersikap sopan kepada orang yang lebih tua!
+  badChoiceKey: InGame.Part1.No3.BadChoice
+  goodChoiceKey: InGame.Part1.No3.GoodChoice
   finalText: {fileID: 1642551514}
 --- !u!4 &609959686
 Transform:
@@ -1995,6 +1995,42 @@ MonoBehaviour:
   isContinue: 0
   part: 1
   level: 4
+--- !u!1 &1642551517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2237802849820503097, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+  m_PrefabInstance: {fileID: 1642551510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1642551518 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2237802848481033558, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+  m_PrefabInstance: {fileID: 1642551510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1642551519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642551517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: InGame.Part1.No3.Bad
+--- !u!114 &1642551520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642551518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: InGame.Part1.No3.Good
 --- !u!1 &1931200886
 GameObject:
   m_ObjectHideFlags: 0

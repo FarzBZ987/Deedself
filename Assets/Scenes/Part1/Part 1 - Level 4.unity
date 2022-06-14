@@ -510,6 +510,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+--- !u!1 &464187781 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2237802849820503097, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+  m_PrefabInstance: {fileID: 464187780}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &464187782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2237802848481033558, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+  m_PrefabInstance: {fileID: 464187780}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &464187783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464187781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: InGame.Part1.No4.Bad
+--- !u!114 &464187784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464187782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: InGame.Part1.No4.Good
 --- !u!1 &476008454
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,8 +902,8 @@ MonoBehaviour:
   pausePanel: {fileID: 36218780}
   anim:
   - {fileID: 476008456}
-  badChoiceText: Kenapa kamu malah mengambil uangnya?? Itu bukan hakmu!
-  goodChoiceText: Selalu antarkan barang hilang ke pihak yang berwenang ya!
+  badChoiceKey: InGame.Part1.No4.BadChoice
+  goodChoiceKey: InGame.Part1.No4.GoodChoice
   finalText: {fileID: 1831287438}
 --- !u!4 &742145786
 Transform:

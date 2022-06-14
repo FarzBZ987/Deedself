@@ -941,8 +941,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab0f34b39a95014b9ef21232cd4acbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partText: {fileID: 1666262242}
-  levelText: {fileID: 121946047}
+  partText: {fileID: 121946047}
+  levelText: {fileID: 1666262242}
 --- !u!4 &1692472963
 Transform:
   m_ObjectHideFlags: 0

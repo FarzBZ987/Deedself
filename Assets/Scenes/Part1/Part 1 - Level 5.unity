@@ -356,6 +356,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8404124cbb8dcc34e8707e0ee4dbcd46, type: 3}
+--- !u!1 &211661869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2237802848481033558, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+  m_PrefabInstance: {fileID: 575192883}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &211661871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211661869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: InGame.Part1.No5.Good
 --- !u!1 &327132621
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +832,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -102.7
       objectReference: {fileID: 0}
+    - target: {fileID: 2698567688991346882, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698567688991346882, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+      propertyPath: LocalizationKey
+      value: InGame.Part1.No1.Good
+      objectReference: {fileID: 0}
+    - target: {fileID: 7978645552042694156, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7978645552042694156, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+      propertyPath: LocalizationKey
+      value: InGame.Part1.No1.Bad
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
 --- !u!1 &820606659
@@ -1125,6 +1159,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1309970800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2237802849820503097, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+  m_PrefabInstance: {fileID: 575192883}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1309970802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309970800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: InGame.Part1.No5.Bad
 --- !u!1 &1463080004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,8 +1501,8 @@ MonoBehaviour:
   pausePanel: {fileID: 1156283303}
   anim:
   - {fileID: 53478401}
-  badChoiceText: Bukannya kalian tidak bermusuhan? Ramah sedikit, dong.
-  goodChoiceText: Jangan lupa untuk selalu ramah dengan teman sendiri!
+  badChoiceKey: InGame.Part1.No5.BadChoice
+  goodChoiceKey: InGame.Part1.No5.GoodChoice
   finalText: {fileID: 2046507977}
 --- !u!4 &1865141153
 Transform:

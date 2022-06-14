@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Assets.SimpleLocalization;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,8 +11,8 @@ public class GameManager : MonoBehaviour
     public GameObject finalPanel;
     public GameObject pausePanel;
     public Animator[] anim;
-    public string badChoiceText;
-    public string goodChoiceText;
+    public string badChoiceKey;
+    public string goodChoiceKey;
 
     private string lastButtonChoice;
     //public string neutralChoiceText;
@@ -39,7 +40,8 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        
+          
+          
     }
 
     public void selectedChoiceButton(string choice)
@@ -49,6 +51,21 @@ public class GameManager : MonoBehaviour
         
         hideChoicePanel();
     }
+
+
+    //from here for localization
+    public void LocalizeGood(){
+
+        finalText.text = LocalizationManager.Localize(goodChoiceKey);
+
+    }
+
+    public void LocalizeBad(){
+
+        finalText.text = LocalizationManager.Localize(badChoiceKey);
+
+    }
+    //until here
 
     private void setAnimTrigger(string choice)
     {
@@ -61,13 +78,19 @@ public class GameManager : MonoBehaviour
                 switch (choice)
                 {
                     case "good":
-                        finalText.text = goodChoiceText;
+                        // finalText.text = goodChoiceKey;
+
+                        LocalizeGood();  //for localization
+
                         break;
                     //case "neutral":
                         //finalText.text = neutralChoiceText;
                         //break;
                     case "bad":
-                        finalText.text = badChoiceText;
+                        // finalText.text = badChoiceKey;
+
+                        LocalizeBad(); //for localization
+                        
                         break;
 
                     default:

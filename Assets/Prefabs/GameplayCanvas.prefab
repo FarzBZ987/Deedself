@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2237802848300329010}
   - component: {fileID: 2237802848300329008}
   - component: {fileID: 2237802848300329011}
+  - component: {fileID: 3665466909088357358}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -79,6 +80,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Kembali ke menu
+--- !u!114 &3665466909088357358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2237802848300329021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: InGame.FinalPanel.ToMenu
 --- !u!1 &2237802848481033558
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +218,7 @@ GameObject:
   - component: {fileID: 2237802848539539867}
   - component: {fileID: 2237802848539539865}
   - component: {fileID: 2237802848539539864}
+  - component: {fileID: 2022339744579626653}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -272,6 +287,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Mulai Ulang
+--- !u!114 &2022339744579626653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2237802848539539866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: InGame.FinalPanel.Ulang
 --- !u!1 &2237802848793491994
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,6 +1012,7 @@ GameObject:
   - component: {fileID: 2237802849758775268}
   - component: {fileID: 2237802849758775194}
   - component: {fileID: 2237802849758775269}
+  - component: {fileID: 4831221377918630574}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1052,6 +1081,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Lanjut
+--- !u!114 &4831221377918630574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2237802849758775271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: InGame.FinalPanel.Lanjut
 --- !u!1 &2237802849820503097
 GameObject:
   m_ObjectHideFlags: 0

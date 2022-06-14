@@ -1271,8 +1271,8 @@ MonoBehaviour:
   pausePanel: {fileID: 1654836723}
   anim:
   - {fileID: 2129252226}
-  badChoiceText: Jika kamu tidak ingin menjaga lingkungan, setidaknya biarkan saja!
-  goodChoiceText: Kebersihan lingkungan sangatlah penting untuk semua orang!
+  badChoiceKey: InGame.Part1.No2.BadChoice
+  goodChoiceKey: InGame.Part1.No2.GoodChoice
   finalText: {fileID: 1654836726}
 --- !u!4 &1356462230
 Transform:
@@ -1888,6 +1888,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1889317940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2237802848481033558, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+  m_PrefabInstance: {fileID: 1654836722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1889317942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889317940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: InGame.Part1.No2.Bad
 --- !u!1 &1934638921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1958,7 +1976,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 0b0a16437df628a4b9e1787132d3dd86, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2052,6 +2070,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2118893865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2237802849820503097, guid: 54744765595bb2342aba45a9cc12e02c, type: 3}
+  m_PrefabInstance: {fileID: 1654836722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2118893867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118893865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: InGame.Part1.No2.Good
 --- !u!1 &2129252224
 GameObject:
   m_ObjectHideFlags: 0
