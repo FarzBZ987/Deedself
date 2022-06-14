@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class FinalTextManager : MonoBehaviour
 {
     [SerializeField] private Text MessageText;
-    [SerializeField] private SpriteRenderer badgeObject;
+    [SerializeField] private Image badgeObject;
     [SerializeField] private int EndingPart;
 
 
@@ -41,6 +41,16 @@ public class FinalTextManager : MonoBehaviour
             {
                 MessageText.text = GoodEndingText;
                 badgeObject.sprite = GoodEndingBadge;
+            }
+            if (!PlayerPrefs.HasKey("Progress_Part" + EndingPart.ToString() + "_AchieveBadge"))
+            {
+                PlayerPrefs.SetInt("Progress_Part" + EndingPart.ToString() + "_AchieveBadge", GameData.instance.getScoring(EndingPart));
+            }
+            else
+            {
+                if (PlayerPrefs.GetInt("Progress_Part" + EndingPart.ToString() + "_AchieveBadge") > GameData.instance.getScoring(EndingPart)){
+                    PlayerPrefs.SetInt("Progress_Part" + EndingPart.ToString() + "_AchieveBadge", GameData.instance.getScoring(EndingPart));
+                }
             }
         }
     }

@@ -25,11 +25,11 @@ namespace Assets.Scripts
             {
                 if(getVolumeType() == "BGM")
                 {
-                    text.text = (GameSettings.instance.bgmVolume * 100).ToString() + "%";
+                    text.text = (GameSettings.instance.bgmVolume).ToString() + "%";
                 }
                 else if(getVolumeType() == "SFX")
                 {
-                    text.text = (GameSettings.instance.sfxVolume * 100).ToString() + "%";
+                    text.text = (GameSettings.instance.sfxVolume).ToString() + "%";
                 }
             }
         }

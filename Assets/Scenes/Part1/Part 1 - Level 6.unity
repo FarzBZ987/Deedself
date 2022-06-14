@@ -1046,6 +1046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentLevel: 6
+  CurrentPart: 1
 --- !u!4 &1630923035
 Transform:
   m_ObjectHideFlags: 0

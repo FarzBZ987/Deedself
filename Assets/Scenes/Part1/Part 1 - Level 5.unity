@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentLevel: 5
-  CurrentPart: 0
+  CurrentPart: 1
 --- !u!4 &141576540
 Transform:
   m_ObjectHideFlags: 0

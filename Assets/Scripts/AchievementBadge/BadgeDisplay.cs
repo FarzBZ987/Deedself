@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BadgeDisplay : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class BadgeDisplay : MonoBehaviour
     [SerializeField] private Sprite NeutralBadge;
     [SerializeField] private Sprite GoodBadge;
 
-    private SpriteRenderer spriteRenderer;
+    private Image BadgeImage;
 
     private int Progress_Part1_AchieveBadge;
     private int Progress_Part2_AchieveBadge;
@@ -26,6 +27,7 @@ public class BadgeDisplay : MonoBehaviour
         {
             resetProgress();
         }
+        BadgeImage = GetComponent<Image>();
         
     }
     // Start is called before the first frame update
@@ -58,16 +60,16 @@ public class BadgeDisplay : MonoBehaviour
         switch (BadgePart)
         {
             case 0:
-                spriteRenderer.sprite = BadBadge;
+                BadgeImage.sprite = BadBadge;
                 break;
             case 1:
-                spriteRenderer.sprite = NeutralBadge;
+                BadgeImage.sprite = NeutralBadge;
                 break;
             case 2:
-                spriteRenderer.sprite = GoodBadge;
+                BadgeImage.sprite = GoodBadge;
                 break;
             default:
-                spriteRenderer.sprite = BadBadge;
+                BadgeImage.sprite = BadBadge;
                 break;
         }
     }

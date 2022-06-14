@@ -408,6 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentLevel: 7
+  CurrentPart: 1
 --- !u!4 &525186418
 Transform:
   m_ObjectHideFlags: 0

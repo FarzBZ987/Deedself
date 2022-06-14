@@ -29,11 +29,11 @@ public class SoundSetting : MonoBehaviour
         {
             if (audioSourceType == "BGM")
             {
-                audioSource.volume = GameSettings.instance.bgmVolume;
+                audioSource.volume = GameSettings.instance.getBGM();
             }
             else if (audioSourceType == "SFX")
             {
-                audioSource.volume = GameSettings.instance.sfxVolume;
+                audioSource.volume = GameSettings.instance.getSFX();
             }
         }
     }

@@ -58,6 +58,19 @@ public class GameData : MonoBehaviour
         LoadData();
     }
 
+    public void resetCh1Progress()
+    {
+        PlayerPrefs.SetInt("Ch1_Good", 0);
+        PlayerPrefs.SetInt("Ch1_Bad", 0);
+        LoadData();
+    }
+    public void resetCh2Progress()
+    {
+        PlayerPrefs.SetInt("Ch2_Good", 0);
+        PlayerPrefs.SetInt("Ch2_Bad", 0);
+        LoadData();
+    }
+
     public void SaveCurrentData(int currLevel, int currPart)
     {
         PlayerPrefs.SetInt("LastLevel", currLevel);
@@ -72,10 +85,8 @@ public class GameData : MonoBehaviour
     {
         PlayerPrefs.SetInt("LastLevel", 1);
         PlayerPrefs.SetInt("LastPart", 1);
-        PlayerPrefs.SetInt("Ch1_Good", 0);
-        PlayerPrefs.SetInt("Ch1_Bad", 0);
-        PlayerPrefs.SetInt("Ch2_Good", 0);
-        PlayerPrefs.SetInt("Ch2_Bad", 0);
+        resetCh1Progress();
+        resetCh2Progress();
         LoadData();
     }
 

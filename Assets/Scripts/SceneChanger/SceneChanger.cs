@@ -12,6 +12,7 @@ public class SceneChanger : MonoBehaviour
 
     public void sceneChange()
     {
+        Debug.Log("Button Pressed");
         if (part > 3)
         {
             part = 3;
@@ -32,6 +33,11 @@ public class SceneChanger : MonoBehaviour
         {
             SceneDataBringer.instance.setPartAndLevel(1, 1);
             SceneManager.LoadScene("NewGame");
+            if(GameData.instance != null)
+            {
+                GameData.instance.resetCh1Progress();
+                GameData.instance.resetCh2Progress();
+            }
         }
         else
         {
@@ -40,18 +46,30 @@ public class SceneChanger : MonoBehaviour
                 GameData.instance.LoadData();
                 if (isContinue)
                 {
+                    Debug.Log("Continue button pressed");
                     level = GameData.instance.LastLevel;
                     part = GameData.instance.LastPart;
-                    if(level != 1 && part != 1)
+                    if(part == 1)
                     {
-                        SceneDataBringer.instance.setPartAndLevel(part, level);
-                        SceneManager.LoadScene("NewGame");
+                        if (level > 1)
+                        {
+                            SceneDataBringer.instance.setPartAndLevel(part, level);
+                            SceneManager.LoadScene("TransisiLevel");
+                        }
+                        else
+                        {
+                            GameData.instance.resetCh1Progress();
+                        }
                     }
                 }
                 else
                 {
                     SceneDataBringer.instance.setPartAndLevel(part, level);
-                    SceneManager.LoadScene("NewGame");
+                    SceneManager.LoadScene("TransisiLevel");
+                    if (level == 1 && part == 2)
+                    {
+                        GameData.instance.resetCh2Progress();
+                    }
                 }
             }   
         }
