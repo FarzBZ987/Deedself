@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - NotPP
   - Water
   - UI
   - Effect
@@ -41,6 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: EffectLayer
-    uniqueID: 1919046799
+  - name: Effect
+    uniqueID: 4260079463
     locked: 0
