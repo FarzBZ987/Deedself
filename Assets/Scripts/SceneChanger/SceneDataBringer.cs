@@ -26,6 +26,15 @@ public class SceneDataBringer : MonoBehaviour
         part = inputPart;
     }
 
+    public int getLevelInt()
+    {
+        return level;
+    }
+    public int getPartInt()
+    {
+        return part;
+    }
+
     public string getLevelStringRoman()
     {
         return numberToRoman(level);

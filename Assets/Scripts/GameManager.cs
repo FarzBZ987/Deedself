@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     private string lastButtonChoice;
     //public string neutralChoiceText;
     public Text finalText;
-
+    private bool alreadyOpenFinalMessage = false;
     
     public static GameManager instance;
 
@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        alreadyOpenFinalMessage = false;
         
     }
 
@@ -116,7 +117,27 @@ public class GameManager : MonoBehaviour
 
     public void BackToMenu()
     {
-        
+        if (alreadyOpenFinalMessage)
+        {
+            if(SceneDataBringer.instance != null)
+            {
+                int currentLevel;
+                int currentPart;
+                currentLevel = SceneDataBringer.instance.getLevelInt();
+                currentPart = SceneDataBringer.instance.getPartInt();
+                if(GameData.instance != null)
+                {
+                    if (currentLevel == 8 && currentPart == 1)
+                    {
+                        GameData.instance.SaveCurrentData(1, 2);
+                    }
+                    else
+                    {
+                        GameData.instance.SaveCurrentData(currentLevel + 1, currentPart);
+                    }
+                }
+            }
+        }
         SceneManager.LoadScene("MainMenu");
     }
     public void showChoicePanel(){
@@ -125,6 +146,7 @@ public class GameManager : MonoBehaviour
     }
     public void showFinalPanel()
     {
+        alreadyOpenFinalMessage = true;
         finalPanel.SetActive(true);
         pausePanel.SetActive(false);
     }
