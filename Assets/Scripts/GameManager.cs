@@ -8,11 +8,12 @@ public class GameManager : MonoBehaviour
 {
     public GameObject choicePanel;
     public GameObject finalPanel;
-    public GameObject pausePanel;
+    //public GameObject pausePanel;
     public Animator[] anim;
     public string badChoiceText;
     public string goodChoiceText;
 
+    private bool isPaused;
     private string lastButtonChoice;
     //public string neutralChoiceText;
     public Text finalText;
@@ -35,7 +36,6 @@ public class GameManager : MonoBehaviour
         }
         hideChoicePanel();
         finalPanel.SetActive(false);
-        pausePanel.SetActive(false);
     }
     void Start()
     {
@@ -44,10 +44,23 @@ public class GameManager : MonoBehaviour
 
     public void selectedChoiceButton(string choice)
     {
-        setAnimTrigger(choice);
-        lastButtonChoice = choice;
+        if (!isPaused)
+        {
+            setAnimTrigger(choice);
+            lastButtonChoice = choice;
+
+            hideChoicePanel();
+        }
         
-        hideChoicePanel();
+    }
+
+    public void pauseGame()
+    {
+        isPaused = true;
+    }
+    public void unpauseGame()
+    {
+        isPaused = false;
     }
 
     private void setAnimTrigger(string choice)
@@ -80,18 +93,6 @@ public class GameManager : MonoBehaviour
     public void hideChoicePanel()
     {
         choicePanel.SetActive(false);
-    }
-
-    public void Pause()
-    {
-        pausePanel.SetActive(true);
-        
-    }
-
-    public void Resume()
-    {
-        
-        pausePanel.SetActive(false);
     }
 
     public void BackToMenu()

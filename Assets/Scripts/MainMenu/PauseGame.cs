@@ -13,6 +13,10 @@ public class PauseGame : MonoBehaviour
     {
         pauseUi.SetActive(true);
         Time.timeScale = 0;
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.pauseGame();
+        }
         Debug.Log("PAUSED");
     }
 
@@ -20,6 +24,10 @@ public class PauseGame : MonoBehaviour
     {
         pauseUi.SetActive(false);
         Time.timeScale = 1;
+        if(GameManager.instance != null)
+        {
+            GameManager.instance.unpauseGame();
+        }
     }
 
     public void BacktoMenu()

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6640556540589282255}
   - component: {fileID: 5813896980154264324}
   m_Layer: 0
-  m_Name: IconClickSFX
+  m_Name: ButtonClickSFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
