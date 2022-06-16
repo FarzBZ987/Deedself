@@ -1,3 +1,70 @@
 Key,English,Indonesian
 InGame.Intro.Part1.No1.1,"Everyone has their own choices, you don't have to think about their choices.","Setiap orang memiliki pilihannya masing-masing, Anda tidak perlu memikirkan pilihan mereka."
 InGame.Intro.Part1.No1.2,"Believe all the choices that you will and have chosen, always have meaning.","Percayalah semua pilihan yang akan dan telah Anda pilih, selalu memiliki makna."
+InGame.Part1.No1.Good,Apologize,Minta Maaf
+InGame.Part1.No1.Bad,Run Away,Melarikan Diri
+InGame.FinalPanel.Lanjut,Continue,Lanjut
+InGame.FinalPanel.Ulang,Retry,Mulai Ulang
+InGame.FinalPanel.ToMenu,Main Menu,Kembali ke Menu
+InGame.Part1.No1.GoodChoice,It’s important to apologize after making a mistake!,Meminta maaf setelah membuat kesalahan sangatlah penting!
+InGame.Part1.No1.BadChoice,You should've apologized to him first!,Sangatlah baik untuk meminta maaf kepada Bapak tersebut!
+InGame.Part1.No5.Good,Say Hello,Menyapa si C
+InGame.Part1.No5.Bad,Stare at him,Pemain menatap C dengan serius
+InGame.Part1.No5.GoodChoice,Don’t forget to always be friendly towards your friends!,Jangan lupa untuk selalu ramah dengan teman sendiri!
+InGame.Part1.No5.BadChoice,"Why are you staring at him? Say hello, no?","Bukannya kalian tidak bermusuhan? Ramah sedikit, dong."
+InGame.Part1.No2.Good,Take the bottle into the trash,Buang botol air ke tempat sampah
+InGame.Part1.No2.Bad,Kick the bottle,Tendang botol
+InGame.Part1.No2.GoodChoice,Everyone should keep the environment clean!,Kebersihan lingkungan sangatlah penting untuk semua orang!
+InGame.Part1.No2.BadChoice,"If you don’t want to pick it up, just let it be!","Jika kamu tidak ingin menjaga lingkungan, setidaknya biarkan saja!"
+InGame.Part1.No3.Good,Say “Excuse me” then pass,Lewat dengan permisi
+InGame.Part1.No3.Bad,Yell then pass,Lewat dan berkata kasar
+InGame.Part1.No3.GoodChoice,Always remember to be polite to elders!,Selalu ingat untuk bersikap sopan kepada orang yang lebih tua!
+InGame.Part1.No3.BadChoice,"Hei, it’s not appropriate you know?!","Hei, sopankah begitu?!"
+InGame.Part1.No4.Good,Bring it to police station,Mengantarkan ke pos polisi
+InGame.Part1.No4.Bad,Take the money,Mengambil uangnya
+InGame.Part1.No4.GoodChoice,"If you ever found a lost items, bring it to the police station!",Selalu antarkan barang hilang ke pihak yang berwenang ya!
+InGame.Part1.No4.BadChoice,Why did you take the money?? It's not yours!,Kenapa kamu malah mengambil uangnya?? Itu bukan hakmu!
+InGame.Part1.No6.Good,Wash hands and feet,Mencuci tangan dan kaki
+InGame.Part1.No6.Bad,Enter the house,Langsung masuk rumah
+InGame.Part1.No6.GoodChoice,Obeying parents is an act of good children!,Menjaga kebersihan dan menuruti orang tua merupakan tindakan anak baik!
+InGame.Part1.No6.BadChoice,It's better to listen to your mother!,"Hei dengarkan ibumu, cucilah tangan dan kakimu terlebih dahulu!."
+InGame.Part1.No7.Good,Go eat,Pergi ke dapur untuk makan
+InGame.Part1.No7.Bad,Play in the bedroom,Bermain di kamar
+InGame.Part1.No7.GoodChoice,It's important to keep your stomach full!,Menjaga perut tetap terisi setelah banyak bermain penting sekali agar tidak mudah sakit!
+InGame.Part1.No7.BadChoice,"If you don’t want to get sick, you should eat first!.","Lebih baik kamu makan dahulu, daripada kamu sakit nantinya!."
+InGame.Part1.No8.Good,Sleep,Pergi ke kamar untuk tidur
+InGame.Part1.No8.Bad,Watch tv,Menonton tv
+InGame.Part1.No8.GoodChoice,Following parents advice is the way to be a good child!,Mengikuti nasihat orang tua merupakan jalan menjadi anak berbakti!
+InGame.Part1.No8.BadChoice,Listen to your mother! Stop watching cartoons all day!,"Dengarkanlah nasihat ibumu!, kenapa kamu malah menonton seharian?"
+InGame.Part2.No1.Good,Study,Belajar untuk kuis
+InGame.Part2.No1.Bad,Make cheat sheet,Membuat contekan
+InGame.Part2.No1.GoodChoice,Always learning will not hinder yourself!,Belajar bersama tidak akan menghambat prestasimu!
+InGame.Part2.No1.BadChoice,"Hei, cheating is an unacceptable behavior!","Hei, menyontek adalah perilaku tak terpuji!"
+InGame.Part2.No2.Good,Prepare yourself,Mempersiapkan diri
+InGame.Part2.No2.Bad,Skipping school,Bolos sekolah
+InGame.Part2.No2.GoodChoice,Be responsible for everything you take!,Bertanggung jawab memang harus ditanam sejak dini.
+InGame.Part2.No2.BadChoice,Running away from responsibilities will not solve your problem..,Lari dari tanggung jawab tidak akan membuat masalahmu selesai.
+InGame.Part2.No3.Good,Save your money,Menabung untuk membeli gitar sendiri
+InGame.Part2.No3.Bad,Ask parents for money,Minta uang ke orang tua
+InGame.Part2.No3.GoodChoice,Your future self will be grateful that you start saving from now!,Dirimu di masa depan akan bersyukur karena kamu menabung saat ini!
+InGame.Part2.No3.BadChoice,Your needs are not the only thing that matters!,Kebutuhanmu bukan satu satunya yang paling penting!
+InGame.Part2.No4.Good,Use your own money,Menggunakan uang sendiri
+InGame.Part2.No4.Bad,Steal things,Mencuri barang dari toko tersebut
+InGame.Part2.No4.GoodChoice,"If you own money can cover it for now, why not?","Selagi bisa diusahakan, kenapa tidak?"
+InGame.Part2.No4.BadChoice,Who taught you to steal?? It’s not good!,Mencuri tidak pernah diajarkan di sekolah !
+InGame.Part2.No5.Good,Help him,Menolong wali kelas
+InGame.Part2.No5.Bad,Go to school canteen,Pergi ke Kantin
+InGame.Part2.No5.GoodChoice,Helping your homeroom teacher is not a bad thing!,Melakukan perintah gurumu juga merupakan ibadah lho.
+InGame.Part2.No5.BadChoice,"Teachers are like parents at school, if you are able to help them, help them!","Guru juga merupakan orang tua di sekolah, jika kamu bisa membantu, bantu saja!"
+InGame.Part2.No6.Good,Help your mother,Membantu membeli keperluan dapur
+InGame.Part2.No6.Bad,Go with your friends,Pergi bersama teman tanpa membantu ibu
+InGame.Part2.No6.GoodChoice,Helping your mother is a good act you can do!,Membantu orang tua adalah tindakan terpuji!
+InGame.Part2.No6.BadChoice,Prioritize your mother over your friends! Because your mother has always been with you!,"Utamakan ibumu daripada teman, karena ibumu selalu bersamamu dari dulu!"
+InGame.Part2.No7.Good,Stop smoking,Berhenti merokok
+InGame.Part2.No7.Bad,Keep smoking,Tetap merokok
+InGame.Part2.No7.GoodChoice,"Keep patience, don’t be mad because they are your parents!",Bersabar dan patuh terhadap orang tua adalah tindakan yang terpuji!
+InGame.Part2.No7.BadChoice,"Your parents know what's best for you, if you don't follow them, who will you follow?!","Orang tuamu tau yang terbaik untukmu, jika kamu tidak mengikutinya, siapa yang akan kamu ikuti?!"
+InGame.Part2.No8.Good,Warn him,Tegur orang tersebut
+InGame.Part2.No8.Bad,"Don’t know, don’t care",Membiarkannya
+InGame.Part2.No8.GoodChoice,"Theft is never right, whatever the reason!",Tidak pernah baik untuk melakukan pencurian apapun alasannya!
+InGame.Part2.No8.BadChoice,"Why don’t you stop him? If you can stop him, why not?",Kenapa kau tidak menegurnya? Selagi bisa menegur kenapa tidak?
