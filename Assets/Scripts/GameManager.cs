@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject choicePanel;
     public GameObject finalPanel;
-    //public GameObject pausePanel;
+    public GameObject pausePanel;
     public Animator[] anim;
     public string badChoiceKey;
     public string goodChoiceKey;
@@ -126,6 +126,7 @@ public class GameManager : MonoBehaviour
     public void showFinalPanel()
     {
         finalPanel.SetActive(true);
+        pausePanel.SetActive(false);
     }
 
     public void restartGame()
