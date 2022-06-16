@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-
 public class NextButtonForLastLevelPerPart : MonoBehaviour
 {
 
@@ -19,10 +17,10 @@ public class NextButtonForLastLevelPerPart : MonoBehaviour
             {
                 if(part == 1)
                 {
-                    //SceneManager.LoadScene("Part 1 ending");
+                    SceneManager.LoadScene("Part1Ending");
                 }else if (part == 2)
                 {
-                    //SceneManager.LoadScene("Part 2 ending");
+                    SceneManager.LoadScene("Part2Ending");
                 }
             }
             else
