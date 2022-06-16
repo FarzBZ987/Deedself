@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/NewGame.unity
     guid: 13f09f5f565f0d3458bfea19971313df
   - enabled: 1
+    path: Assets/Scenes/TransisiLevel.unity
+    guid: 7e6e91a5efd649f4f8a13ed133cba9dc
+  - enabled: 1
     path: Assets/Scenes/Part1/Part 1 - Level 1.unity
     guid: c1ce8dbe0a95dcf4bacb50b3abe7d8d5
   - enabled: 1
@@ -32,4 +35,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Part1/Part 1 - Level 8.unity
     guid: 6a5bf1d6b214c4a459d119397d57bcea
+  - enabled: 1
+    path: Assets/Scenes/EndingMessage/Part1Ending.unity
+    guid: 8e32df68d6279a64ab736620dd1837a4
+  - enabled: 1
+    path: Assets/Scenes/Part2/Part 2 - Level 1.unity
+    guid: 71ca41ff4314e474ca0b6e209db4d6e0
+  - enabled: 1
+    path: Assets/Scenes/Part2/Part 2 - Level 2.unity
+    guid: 45ff85a4acb78b749884c301326c5ba5
+  - enabled: 1
+    path: Assets/Scenes/Part2/Part 2 - Level 3.unity
+    guid: 38cb38c80fe1194479d5da037e0f3e3a
+  - enabled: 1
+    path: Assets/Scenes/Part2/Part 2 - Level 4.unity
+    guid: e0581266f8f31b14b979ccae188b190c
+  - enabled: 1
+    path: Assets/Scenes/Part2/Part 2 - Level 5.unity
+    guid: 1d8b8c0991bba0547bac04393156f8a0
+  - enabled: 1
+    path: Assets/Scenes/Part2/Part 2 - Level 6.unity
+    guid: f4a409c57b7db0f4c8961928b9774bea
+  - enabled: 1
+    path: Assets/Scenes/Part2/Part 2 - Level 7.unity
+    guid: bec168d4a7dc40540bae498a35df6a41
+  - enabled: 1
+    path: Assets/Scenes/Part2/Part 2 - Level 8.unity
+    guid: 2069a082a2befc3469c46f4523c2f71e
+  - enabled: 1
+    path: Assets/Scenes/EndingMessage/Part2Ending.unity
+    guid: 01385d49abc15a144ab3358893b3a664
   m_configObjects: {}
