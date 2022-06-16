@@ -5667,7 +5667,7 @@ MonoBehaviour:
     Id: 669456043
   - Name: MainMenu
     Id: 737851360
-  - Name: MenuLevel
+  - Name: Endings
     Id: 378181626
   SaveFolder: {fileID: 102900000, guid: c392831e85f928548b8494fefd912562, type: 3}
 --- !u!4 &867387233
