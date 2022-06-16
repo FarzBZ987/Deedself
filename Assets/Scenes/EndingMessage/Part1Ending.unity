@@ -123,6 +123,72 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &410979287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 410979289}
+  - component: {fileID: 410979288}
+  - component: {fileID: 410979290}
+  m_Layer: 0
+  m_Name: FinalMessageUpdater
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &410979288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410979287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45439d9f177d77c4faa793909b81beb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WillSaveTo: 0
+--- !u!4 &410979289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410979287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &410979290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410979287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d25fed6f74003f4c8ae4ab76025b6b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MessageText: {fileID: 696862981}
+  badgeObject: {fileID: 1843912705}
+  EndingPart: 1
+  GoodEndingText: 
+  GoodEndingBadge: {fileID: 21300000, guid: 5c37ad03c8967474c9b88da499ec36cb, type: 3}
+  NeutralEndingText: 
+  NeutralEndingBadge: {fileID: 21300000, guid: 0c6e613e44f07dc43a0f825560fa3021, type: 3}
+  BadEndingText: 
+  BadEndingBadge: {fileID: 21300000, guid: 13e5f375175240e4ca82c498cf4e362c, type: 3}
 --- !u!1 &475285333
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,7 +425,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The Kid ended up being a Bad Kid with Bad Attitude toward others
+  m_Text: Pemain menjadi seorang anak yang baik dan disenangi oleh keluarga dan teman-temannya.
+    Kemanapun dia pergi pasti ada seseorang yang menyapanya dan semua orang menyukainya.
 --- !u!222 &696862982
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -521,7 +588,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4, y: -100}
+  m_AnchoredPosition: {x: 0.00000023842, y: -258}
   m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1843912704
