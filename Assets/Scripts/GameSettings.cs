@@ -5,8 +5,8 @@ using UnityEngine;
 public class GameSettings : MonoBehaviour
 {
 
-    [Range(0, 1)] public float bgmVolume;
-    [Range(0, 1)] public float sfxVolume;
+    [Range(0, 100)] public int bgmVolume;
+    [Range(0, 100)] public int sfxVolume;
 
     public static GameSettings instance;
     private void Awake()
@@ -23,8 +23,8 @@ public class GameSettings : MonoBehaviour
         if (!PlayerPrefs.HasKey("hasRun"))
         {
             PlayerPrefs.SetInt("hasRun", 1);
-            PlayerPrefs.SetFloat("bgmVolume", 1f);
-            PlayerPrefs.SetFloat("sfxVolume", 1f);
+            PlayerPrefs.SetInt("bgmVolume", 100);
+            PlayerPrefs.SetInt("sfxVolume", 100);
         }
         LoadSettings();
         
@@ -33,13 +33,47 @@ public class GameSettings : MonoBehaviour
 
     private void LoadSettings()
     {
-        bgmVolume = PlayerPrefs.GetFloat("bgmVolume");
-        sfxVolume = PlayerPrefs.GetFloat("sfxVolume");
+        bgmVolume = PlayerPrefs.GetInt("bgmVolume");
+        sfxVolume = PlayerPrefs.GetInt("sfxVolume");
     }
 
     public void SaveSettings()
     {
-        PlayerPrefs.SetFloat("bgmVolume", bgmVolume);
-        PlayerPrefs.SetFloat("sfxVolume", sfxVolume);
+        PlayerPrefs.SetInt("bgmVolume", bgmVolume);
+        PlayerPrefs.SetInt("sfxVolume", sfxVolume);
+    }
+
+    public void sfxDown()
+    {
+        sfxVolume = sfxVolume - 10 <= 0 ? 0 : sfxVolume - 10;
+        SaveSettings();
+    }
+    public void sfxUp()
+    {
+        sfxVolume = sfxVolume + 10 >= 100 ? 100 : sfxVolume + 10;
+        SaveSettings();
+    }
+    public void bgmDown()
+    {
+        bgmVolume = bgmVolume - 10 <= 0 ? 0 : bgmVolume - 10;
+        SaveSettings();
+    }
+    public void bgmUp()
+    {
+        bgmVolume = bgmVolume + 10 >= 100 ? 100 : bgmVolume + 10;
+        SaveSettings();
+    }
+
+    public float getSFX()
+    {
+        float i;
+        i = sfxVolume;
+        return i / 100;
+    }
+    public float getBGM()
+    {
+        float i;
+        i = bgmVolume;
+        return i / 100;
     }
 }

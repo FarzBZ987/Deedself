@@ -7,7 +7,7 @@ public class ButtonTypeSelector : MonoBehaviour
 
     public enum ButtonType
     {
-        GOOD, NEUTRAL, BAD
+        GOOD,  BAD
     }
 
     [SerializeField] private ButtonType buttonType;

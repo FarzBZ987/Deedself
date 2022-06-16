@@ -6,24 +6,14 @@ using UnityEngine.SceneManagement;
 public class GameData : MonoBehaviour
 {
 
-    public int lastLevelPlayed;
+    public int HighestLevelPlayed;
+    public int HighestPartPlayed;
+
+    public int LastLevel;
+    public int LastPart;
 
     [Header("Chapter 1 scores")]
     public int ch1ScoreGood;
-
-    internal bool isCurrentLevelHigher(int currentLevel)
-    {
-        if (lastLevelPlayed <= currentLevel)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-        
-    }
-
     //public int ch1ScoreNeutral;
     public int ch1ScoreBad;
 
@@ -41,7 +31,7 @@ public class GameData : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -50,23 +40,155 @@ public class GameData : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(this);
-        if (!PlayerPrefs.HasKey("LastLevel"))
+        if (!PlayerPrefs.HasKey("HighestLevel") || !PlayerPrefs.HasKey("HighestPart"))
         {
-            SetLastLevel(1);
+            SetHighestLevel(1, 1);
+        }
+        getHighestLevel();
+
+        if (!PlayerPrefs.HasKey("LastLevel")
+            || !PlayerPrefs.HasKey("LastPart")
+            || !PlayerPrefs.HasKey("Ch1_Good")
+            || !PlayerPrefs.HasKey("Ch1_Bad")
+            || !PlayerPrefs.HasKey("Ch2_Good")
+            || !PlayerPrefs.HasKey("Ch2_Bad"))
+        {
+            resetData();
+        }
+        LoadData();
+    }
+
+    public void resetCh1Progress()
+    {
+        PlayerPrefs.SetInt("Ch1_Good", 0);
+        PlayerPrefs.SetInt("Ch1_Bad", 0);
+        LoadData();
+    }
+    public void resetCh2Progress()
+    {
+        PlayerPrefs.SetInt("Ch2_Good", 0);
+        PlayerPrefs.SetInt("Ch2_Bad", 0);
+        LoadData();
+    }
+
+    public void SaveCurrentData(int currLevel, int currPart)
+    {
+        PlayerPrefs.SetInt("LastLevel", currLevel);
+        PlayerPrefs.SetInt("LastPart", currPart);
+        PlayerPrefs.SetInt("Ch1_Good", ch1ScoreGood);
+        PlayerPrefs.SetInt("Ch1_Bad", ch1ScoreBad);
+        PlayerPrefs.SetInt("Ch2_Good", ch2ScoreGood);
+        PlayerPrefs.SetInt("Ch2_Bad", ch2ScoreBad);
+    }
+
+    public void resetData()
+    {
+        PlayerPrefs.SetInt("LastLevel", 1);
+        PlayerPrefs.SetInt("LastPart", 1);
+        resetCh1Progress();
+        resetCh2Progress();
+        LoadData();
+    }
+
+    public void LoadData()
+    {
+        LastLevel = PlayerPrefs.GetInt("LastLevel");
+        LastPart = PlayerPrefs.GetInt("LastPart");
+        ch1ScoreBad = PlayerPrefs.GetInt("Ch2_Good");
+        ch1ScoreGood = PlayerPrefs.GetInt("Ch1_Good");
+        ch2ScoreBad = PlayerPrefs.GetInt("Ch2_Bad");
+        ch2ScoreGood = PlayerPrefs.GetInt("Ch2_Good");
+    }
+
+    public void SetHighestLevel(int LevelKey, int PartKey){
+        PlayerPrefs.SetInt("HighestLevel", LevelKey);
+        HighestLevelPlayed = LevelKey;
+        PlayerPrefs.SetInt("HighestPart", PartKey);
+        HighestPartPlayed = PartKey;
+    }
+    private void getHighestLevel()
+    {
+        HighestLevelPlayed = PlayerPrefs.GetInt("HighestLevel");
+        HighestPartPlayed = PlayerPrefs.GetInt("HighestPart");
+    }
+    internal bool isCurrentLevelAndPartHigher(int currentLevel, int currentPart)
+    {
+        if (HighestPartPlayed < currentPart)
+        {
+            
+            return true;
         }
         else
         {
-            getLastLevel();
+            if (HighestLevelPlayed < currentLevel)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         
     }
-    
-    public void SetLastLevel(int LevelKey){
-        PlayerPrefs.SetInt("LastLevel", LevelKey);
-        lastLevelPlayed = LevelKey;
-    }
-    private void getLastLevel()
+    public bool CheckTotalScoreIs8(int part)
     {
-        lastLevelPlayed = PlayerPrefs.GetInt("LastLevel");
+        switch (part)
+        {
+            case 1:
+                if(ch1ScoreBad + ch1ScoreGood == 8)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            case 2:
+                if (ch2ScoreBad + ch2ScoreGood == 8)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            default:
+                return false;
+        }
+    }
+
+    public int getScoring(int part)
+    {
+        switch (part)
+        {
+            case 1:
+                if(Mathf.Abs(ch1ScoreBad - ch1ScoreGood) <= 2)
+                {
+                    return 1;
+                }
+                else if(ch1ScoreGood > ch1ScoreBad){
+                    return 2;
+                }
+                else
+                {
+                    return 0;
+                }
+            case 2:
+                if (Mathf.Abs(ch2ScoreBad - ch2ScoreGood) <= 2)
+                {
+                    return 1;
+                }
+                else if (ch2ScoreGood > ch2ScoreBad)
+                {
+                    return 2;
+                }
+                else
+                {
+                    return 0;
+                }
+            default:
+                return 0;
+        }
     }
 }

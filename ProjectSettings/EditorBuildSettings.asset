@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/NewGame.unity
     guid: 13f09f5f565f0d3458bfea19971313df
   - enabled: 1
+    path: Assets/Scenes/TransisiLevel.unity
+    guid: 7e6e91a5efd649f4f8a13ed133cba9dc
+  - enabled: 1
     path: Assets/Scenes/Part1/Part 1 - Level 1.unity
     guid: c1ce8dbe0a95dcf4bacb50b3abe7d8d5
   - enabled: 1
