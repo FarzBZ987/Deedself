@@ -19,11 +19,12 @@ public class BadgeUpdater : MonoBehaviour
             resetProgress();
         }
         HighestScore = PlayerPrefs.GetInt(BadgePartGetString_ForPlayerPrefs());
+        UpdateBadgeProgress();
     }
 
     private void Start()
     {
-        UpdateBadgeProgress();
+        
     }
 
     private void UpdateBadgeProgress()
