@@ -9,20 +9,26 @@ public class MultiLanguage : MonoBehaviour
     private void Awake(){
         LocalizationManager.Read();
 
-        switch (Application.systemLanguage)
-        {
-            case SystemLanguage.English:
-                    LocalizationManager.Language = "English";
-                    break;
-            case SystemLanguage.Indonesian:
-                    LocalizationManager.Language = "Indonesian";
-                    break;
-            
-        }
+        LoadLang();
+    
     }
+
+
+    public void LoadLang(){
+        string langload = PlayerPrefs.GetString("languageprefs");
+
+        LocalizationManager.Language = langload;
+
+    }
+
 
     public void Language(string language){
 
-        LocalizationManager.Language = language;
+        PlayerPrefs.SetString("languageprefs", language);
+        
+        string langlo = PlayerPrefs.GetString("languageprefs");
+        
+        LocalizationManager.Language = langlo;
     }
 }
+
