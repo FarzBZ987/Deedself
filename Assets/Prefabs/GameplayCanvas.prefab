@@ -319,7 +319,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -465,7 +465,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -1011,7 +1011,7 @@ MonoBehaviour:
           m_StringArgument: Indonesian
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -1524,7 +1524,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -1671,7 +1671,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -1883,7 +1883,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -2030,7 +2030,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -2103,7 +2103,7 @@ RectTransform:
   - {fileID: 2237802850055193199}
   - {fileID: 2237802848989646095}
   - {fileID: 2237802848537647158}
-  - {fileID: 202986805509567967}
+  - {fileID: 5157373005919177195}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2464,7 +2464,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -2805,7 +2805,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -3042,7 +3042,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -3186,7 +3186,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -3796,7 +3796,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -4095,7 +4095,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -4318,7 +4318,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -4614,7 +4614,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -4759,7 +4759,7 @@ MonoBehaviour:
           m_StringArgument: English
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -5265,7 +5265,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -5815,7 +5815,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1034074266297568532}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Assets.Scripts.SFXController, Assembly-CSharp
         m_MethodName: playSFX
         m_Mode: 3
@@ -6244,76 +6244,77 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1001 &6842895900709594640
+--- !u!1001 &1996596091482069540
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 2237802849697443559}
     m_Modifications:
-    - target: {fileID: 6522156270704282506, guid: eb995af886a766743a4e42eba712f36a, type: 3}
+    - target: {fileID: 6522156270704282506, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
       propertyPath: m_Name
       value: ButtonClickSFX
       objectReference: {fileID: 0}
-    - target: {fileID: 6640556540589282255, guid: eb995af886a766743a4e42eba712f36a, type: 3}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 6640556540589282255, guid: eb995af886a766743a4e42eba712f36a, type: 3}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.8695655
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.8695655
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8695655
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.1681068
+      value: -492.8168
       objectReference: {fileID: 0}
-    - target: {fileID: 6640556540589282255, guid: eb995af886a766743a4e42eba712f36a, type: 3}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.044346318
+      value: 180.19608
       objectReference: {fileID: 0}
-    - target: {fileID: 6640556540589282255, guid: eb995af886a766743a4e42eba712f36a, type: 3}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 134.47075
+      value: 258.8306
       objectReference: {fileID: 0}
-    - target: {fileID: 6640556540589282255, guid: eb995af886a766743a4e42eba712f36a, type: 3}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6640556540589282255, guid: eb995af886a766743a4e42eba712f36a, type: 3}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6640556540589282255, guid: eb995af886a766743a4e42eba712f36a, type: 3}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6640556540589282255, guid: eb995af886a766743a4e42eba712f36a, type: 3}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6640556540589282255, guid: eb995af886a766743a4e42eba712f36a, type: 3}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6640556540589282255, guid: eb995af886a766743a4e42eba712f36a, type: 3}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6640556540589282255, guid: eb995af886a766743a4e42eba712f36a, type: 3}
+    - target: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: eb995af886a766743a4e42eba712f36a, type: 3}
---- !u!4 &202986805509567967 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
+--- !u!4 &5157373005919177195 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6640556540589282255, guid: eb995af886a766743a4e42eba712f36a, type: 3}
-  m_PrefabInstance: {fileID: 6842895900709594640}
+  m_CorrespondingSourceObject: {fileID: 6640556540589282255, guid: 755f8d7827392c349aefba2ac136ed79, type: 3}
+  m_PrefabInstance: {fileID: 1996596091482069540}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1034074266297568532 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5813896980154264324, guid: eb995af886a766743a4e42eba712f36a, type: 3}
-  m_PrefabInstance: {fileID: 6842895900709594640}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56c825732e928674193948adb340fe69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
