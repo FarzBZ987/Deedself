@@ -17,8 +17,8 @@ public class BadgeDisplay : MonoBehaviour
 
     private Image BadgeImage;
 
-    private int Progress_Part1_AchieveBadge;
-    private int Progress_Part2_AchieveBadge;
+    [SerializeField] private int Progress_Part1_AchieveBadge;
+    [SerializeField] private int Progress_Part2_AchieveBadge;
 
 
     private void Awake()
@@ -37,10 +37,16 @@ public class BadgeDisplay : MonoBehaviour
         if (BadgePartGetString() == "Part 1")
         {
             SetBadgeDisplay(Progress_Part1_AchieveBadge);
-        }else if(BadgePartGetString() == "Part 2")
+        }
+        else if (BadgePartGetString() == "Part 2")
         {
             SetBadgeDisplay(Progress_Part2_AchieveBadge);
         }
+        
+    }
+
+    private void Update()
+    {
     }
 
     private string BadgePartGetString()
@@ -69,6 +75,7 @@ public class BadgeDisplay : MonoBehaviour
                 BadgeImage.sprite = GoodBadge;
                 break;
             default:
+                Debug.Log("Not Found");
                 BadgeImage.sprite = BadBadge;
                 break;
         }
@@ -77,11 +84,12 @@ public class BadgeDisplay : MonoBehaviour
     {
         PlayerPrefs.SetInt("Progress_Part1_AchieveBadge", 0);
         PlayerPrefs.SetInt("Progress_Part2_AchieveBadge", 0);
+        getProgress();
     }
     private void getProgress()
     {
         Progress_Part1_AchieveBadge = PlayerPrefs.GetInt("Progress_Part1_AchieveBadge");
-        Progress_Part1_AchieveBadge = PlayerPrefs.GetInt("Progress_Part2_AchieveBadge");
+        Progress_Part2_AchieveBadge = PlayerPrefs.GetInt("Progress_Part2_AchieveBadge");
     }
     private bool HasProgress()
     {

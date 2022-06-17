@@ -50,7 +50,6 @@ public class GameManager : MonoBehaviour
         {
             setAnimTrigger(choice);
             lastButtonChoice = choice;
-
             hideChoicePanel();
         }
         
@@ -84,7 +83,6 @@ public class GameManager : MonoBehaviour
     private void setAnimTrigger(string choice)
     {
         if(anim.Length > 0) {
-            
             for (int i = 0; i < anim.Length; i++)
             {
                 //Debug.Log(i.ToString());
@@ -107,6 +105,28 @@ public class GameManager : MonoBehaviour
                         break;
                 }
             }
+        }
+        if (SceneDataBringer.instance != null)
+        {
+            int currentLevel;
+            int currentPart;
+            currentLevel = SceneDataBringer.instance.getLevelInt();
+            currentPart = SceneDataBringer.instance.getPartInt();
+            if (GameData.instance != null)
+            {
+                if (currentLevel == 8 && currentPart == 1)
+                {
+                    GameData.instance.SaveCurrentData(1, 2);
+                }
+                else
+                {
+                    GameData.instance.SaveCurrentData(currentLevel + 1, currentPart);
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("SceneDataBringer Not Found");
         }
     }
 
@@ -153,33 +173,37 @@ public class GameManager : MonoBehaviour
 
     public void restartGame()
     {
-        if(lastButtonChoice == "good")
+        if(SceneDataBringer.instance != null)
         {
-            if(SceneDataBringer.instance.getPartStringRoman() == "I")
+            if(lastButtonChoice == "good")
             {
-                GameData.instance.ch1ScoreGood--;
-            }else if(SceneDataBringer.instance.getPartStringRoman() == "II")
-            {
-                GameData.instance.ch2ScoreGood--;
-            }else if (SceneDataBringer.instance.getPartStringRoman() == "III")
-            {
-                GameData.instance.ch3ScoreGood--;
+                if(SceneDataBringer.instance.getPartStringRoman() == "I")
+                {
+                    GameData.instance.ch1ScoreGood--;
+                }else if(SceneDataBringer.instance.getPartStringRoman() == "II")
+                {
+                    GameData.instance.ch2ScoreGood--;
+                }else if (SceneDataBringer.instance.getPartStringRoman() == "III")
+                {
+                    GameData.instance.ch3ScoreGood--;
+                }
             }
-        }
-        if (lastButtonChoice == "bad")
-        {
-            if (SceneDataBringer.instance.getPartStringRoman() == "I")
+            if (lastButtonChoice == "bad")
             {
-                GameData.instance.ch1ScoreBad--;
+                if (SceneDataBringer.instance.getPartStringRoman() == "I")
+                {
+                    GameData.instance.ch1ScoreBad--;
+                }
+                else if (SceneDataBringer.instance.getPartStringRoman() == "II")
+                {
+                    GameData.instance.ch2ScoreBad--;
+                }
+                else if (SceneDataBringer.instance.getPartStringRoman() == "III")
+                {   
+                    GameData.instance.ch3ScoreBad--;
+                }
             }
-            else if (SceneDataBringer.instance.getPartStringRoman() == "II")
-            {
-                GameData.instance.ch2ScoreBad--;
-            }
-            else if (SceneDataBringer.instance.getPartStringRoman() == "III")
-            {
-                GameData.instance.ch3ScoreBad--;
-            }
+            //GameData.instance.SaveCurrentData(SceneDataBringer.instance.getLevelInt(), SceneDataBringer.instance.getPartInt());
         }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -194,7 +218,9 @@ public class GameManager : MonoBehaviour
         {
             GameData.instance.ch1ScoreBad++;
         }
-    }public void addScorePart2()
+        GameData.instance.SaveCurrentData(SceneDataBringer.instance.getLevelInt()+1, SceneDataBringer.instance.getPartInt());
+    }
+    public void addScorePart2()
     {
         if (lastButtonChoice == "good")
         {
@@ -204,7 +230,9 @@ public class GameManager : MonoBehaviour
         {
             GameData.instance.ch2ScoreBad++;
         }
-    }public void addScorePart3()
+        GameData.instance.SaveCurrentData(SceneDataBringer.instance.getLevelInt()+1, SceneDataBringer.instance.getPartInt());
+    }
+    public void addScorePart3()
     {
         if (lastButtonChoice == "good")
         {
@@ -214,5 +242,7 @@ public class GameManager : MonoBehaviour
         {
             GameData.instance.ch3ScoreBad++;
         }
+        
     }
+
 }

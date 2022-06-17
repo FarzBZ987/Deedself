@@ -919,10 +919,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76cd32ca46fcbec429e6d1be128562a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  badgePart: 0
+  badgePart: 1
   BadBadge: {fileID: 21300000, guid: 13e5f375175240e4ca82c498cf4e362c, type: 3}
   NeutralBadge: {fileID: 21300000, guid: 0c6e613e44f07dc43a0f825560fa3021, type: 3}
   GoodBadge: {fileID: 21300000, guid: 5c37ad03c8967474c9b88da499ec36cb, type: 3}
+  Progress_Part1_AchieveBadge: 0
+  Progress_Part2_AchieveBadge: 0
 --- !u!1 &128651442
 GameObject:
   m_ObjectHideFlags: 0
@@ -6613,10 +6615,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76cd32ca46fcbec429e6d1be128562a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  badgePart: 0
+  badgePart: 1
   BadBadge: {fileID: 21300000, guid: 13e5f375175240e4ca82c498cf4e362c, type: 3}
   NeutralBadge: {fileID: 21300000, guid: 0c6e613e44f07dc43a0f825560fa3021, type: 3}
   GoodBadge: {fileID: 21300000, guid: 5c37ad03c8967474c9b88da499ec36cb, type: 3}
+  Progress_Part1_AchieveBadge: 0
+  Progress_Part2_AchieveBadge: 0
 --- !u!1 &1057651357
 GameObject:
   m_ObjectHideFlags: 0
@@ -8222,10 +8226,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76cd32ca46fcbec429e6d1be128562a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  badgePart: 1
+  badgePart: 0
   BadBadge: {fileID: 21300000, guid: 13e5f375175240e4ca82c498cf4e362c, type: 3}
   NeutralBadge: {fileID: 21300000, guid: 0c6e613e44f07dc43a0f825560fa3021, type: 3}
   GoodBadge: {fileID: 21300000, guid: 5c37ad03c8967474c9b88da499ec36cb, type: 3}
+  Progress_Part1_AchieveBadge: 0
+  Progress_Part2_AchieveBadge: 0
 --- !u!1 &1201233622
 GameObject:
   m_ObjectHideFlags: 0
@@ -12847,7 +12853,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -384.21014, y: -246.08914}
+  m_AnchoredPosition: {x: -384.2101, y: -246.08914}
   m_SizeDelta: {x: -1032.74, y: 259.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1845938233
@@ -14314,10 +14320,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76cd32ca46fcbec429e6d1be128562a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  badgePart: 1
+  badgePart: 0
   BadBadge: {fileID: 21300000, guid: 13e5f375175240e4ca82c498cf4e362c, type: 3}
   NeutralBadge: {fileID: 21300000, guid: 0c6e613e44f07dc43a0f825560fa3021, type: 3}
   GoodBadge: {fileID: 21300000, guid: 5c37ad03c8967474c9b88da499ec36cb, type: 3}
+  Progress_Part1_AchieveBadge: 0
+  Progress_Part2_AchieveBadge: 0
 --- !u!1 &2085809955
 GameObject:
   m_ObjectHideFlags: 0

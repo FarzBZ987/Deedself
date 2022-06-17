@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelName: 
-  LoadDelay: 20
+  LoadDelay: 17
 --- !u!4 &87758580
 Transform:
   m_ObjectHideFlags: 0

@@ -73,12 +73,25 @@ public class GameData : MonoBehaviour
 
     public void SaveCurrentData(int currLevel, int currPart)
     {
+        if(currLevel > 8)
+        {
+            currLevel = 1;
+            if(currPart + 1 == 3)
+            {
+                currPart = 2;
+            }
+            else
+            {
+                currPart = currPart+1;
+            }
+        }
         PlayerPrefs.SetInt("LastLevel", currLevel);
         PlayerPrefs.SetInt("LastPart", currPart);
         PlayerPrefs.SetInt("Ch1_Good", ch1ScoreGood);
         PlayerPrefs.SetInt("Ch1_Bad", ch1ScoreBad);
         PlayerPrefs.SetInt("Ch2_Good", ch2ScoreGood);
         PlayerPrefs.SetInt("Ch2_Bad", ch2ScoreBad);
+        LoadData();
     }
 
     public void resetData()
@@ -94,10 +107,11 @@ public class GameData : MonoBehaviour
     {
         LastLevel = PlayerPrefs.GetInt("LastLevel");
         LastPart = PlayerPrefs.GetInt("LastPart");
-        ch1ScoreBad = PlayerPrefs.GetInt("Ch2_Good");
+        ch1ScoreBad = PlayerPrefs.GetInt("Ch1_Bad");
         ch1ScoreGood = PlayerPrefs.GetInt("Ch1_Good");
         ch2ScoreBad = PlayerPrefs.GetInt("Ch2_Bad");
         ch2ScoreGood = PlayerPrefs.GetInt("Ch2_Good");
+        getHighestLevel();
     }
 
     public void SetHighestLevel(int LevelKey, int PartKey){
@@ -105,6 +119,7 @@ public class GameData : MonoBehaviour
         HighestLevelPlayed = LevelKey;
         PlayerPrefs.SetInt("HighestPart", PartKey);
         HighestPartPlayed = PartKey;
+        LoadData();
     }
     private void getHighestLevel()
     {

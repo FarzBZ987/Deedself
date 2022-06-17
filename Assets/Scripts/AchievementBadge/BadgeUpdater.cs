@@ -31,6 +31,7 @@ public class BadgeUpdater : MonoBehaviour
     {
         if (GameData.instance != null)
         {
+            Debug.Log("GameData Found!");
             if (GameData.instance.CheckTotalScoreIs8(PartGetInt())){
                 int currentScore = GameData.instance.getScoring(PartGetInt());
                 if (currentScore > HighestScore)

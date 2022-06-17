@@ -8,7 +8,7 @@ public class SceneChanger : MonoBehaviour
     [HideInInspector] public bool isNewGame;
     [HideInInspector] public bool isContinue;
     [HideInInspector, Range(1, 3)] public int part;
-    [HideInInspector, Range(1, 7)] public int level;
+    [HideInInspector, Range(1, 8)] public int level;
 
     public void sceneChange()
     {
@@ -59,6 +59,18 @@ public class SceneChanger : MonoBehaviour
                         else
                         {
                             GameData.instance.resetCh1Progress();
+                        }
+                    }
+                    if (part == 2)
+                    {
+                        if (level > 1)
+                        {
+                            SceneDataBringer.instance.setPartAndLevel(part, level);
+                            SceneManager.LoadScene("TransisiLevel");
+                        }
+                        else
+                        {
+                            GameData.instance.resetCh2Progress();
                         }
                     }
                 }
