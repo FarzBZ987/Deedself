@@ -51,27 +51,27 @@ public class SceneChanger : MonoBehaviour
                     part = GameData.instance.LastPart;
                     if(part == 1)
                     {
-                        if (level > 1)
+                        SceneDataBringer.instance.setPartAndLevel(part, level);
+                        if (level == 1)
                         {
-                            SceneDataBringer.instance.setPartAndLevel(part, level);
-                            SceneManager.LoadScene("TransisiLevel");
+                            GameData.instance.resetCh1Progress();
+                            SceneManager.LoadScene("NewGame");
                         }
                         else
                         {
-                            GameData.instance.resetCh1Progress();
+                            SceneManager.LoadScene("TransisiLevel");
                         }
+
                     }
                     if (part == 2)
                     {
-                        if (level > 1)
-                        {
-                            SceneDataBringer.instance.setPartAndLevel(part, level);
-                            SceneManager.LoadScene("TransisiLevel");
-                        }
-                        else
+                        if (level == 1)
                         {
                             GameData.instance.resetCh2Progress();
+                            
                         }
+                        SceneDataBringer.instance.setPartAndLevel(part, level);
+                        SceneManager.LoadScene("TransisiLevel");
                     }
                 }
                 else
