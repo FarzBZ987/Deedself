@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Assets.SimpleLocalization;
 
 public class FinalTextManager : MonoBehaviour
 {
@@ -25,21 +26,23 @@ public class FinalTextManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        
+
         if(GameData.instance != null)
         {
             if(GameData.instance.getScoring(EndingPart) == 0)
             {
-                MessageText.text = BadEndingText;
+                LocalizeBad();
                 badgeObject.sprite = BadEndingBadge;
             }
             if (GameData.instance.getScoring(EndingPart) == 1)
             {
-                MessageText.text = NeutralEndingText;
+                LocalizeNeutral();
                 badgeObject.sprite = NeutralEndingBadge;
             }
             if (GameData.instance.getScoring(EndingPart) == 2)
             {
-                MessageText.text = GoodEndingText;
+                LocalizeGood();
                 badgeObject.sprite = GoodEndingBadge;
             }
             if (!PlayerPrefs.HasKey("Progress_Part" + EndingPart.ToString() + "_AchieveBadge"))
@@ -53,6 +56,24 @@ public class FinalTextManager : MonoBehaviour
                 }
             }
         }
+    }
+    public void LocalizeGood()
+    {
+
+        MessageText.text = LocalizationManager.Localize(GoodEndingText);
+
+    }
+    public void LocalizeNeutral()
+    {
+
+        MessageText.text = LocalizationManager.Localize(NeutralEndingText);
+
+    }
+    public void LocalizeBad()
+    {
+
+        MessageText.text = LocalizationManager.Localize(BadEndingText);
+
     }
     
 }

@@ -183,11 +183,11 @@ MonoBehaviour:
   MessageText: {fileID: 696862981}
   badgeObject: {fileID: 1843912705}
   EndingPart: 1
-  GoodEndingText: 
+  GoodEndingText: Endings.Part1.Good
   GoodEndingBadge: {fileID: 21300000, guid: 5c37ad03c8967474c9b88da499ec36cb, type: 3}
-  NeutralEndingText: 
+  NeutralEndingText: Endings.Part1.Neutral
   NeutralEndingBadge: {fileID: 21300000, guid: 0c6e613e44f07dc43a0f825560fa3021, type: 3}
-  BadEndingText: 
+  BadEndingText: Endings.Part1.Bad
   BadEndingBadge: {fileID: 21300000, guid: 13e5f375175240e4ca82c498cf4e362c, type: 3}
 --- !u!1 &475285333
 GameObject:
