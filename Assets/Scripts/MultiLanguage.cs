@@ -7,11 +7,18 @@ public class MultiLanguage : MonoBehaviour
 {
     
     private void Awake(){
-        LocalizationManager.Read();
+        
+        if (!PlayerPrefs.HasKey("languageprefs")){
+            Language("Indonesian");
+            
 
+        }
+        LocalizationManager.Read();
         LoadLang();
+        
     
     }
+  
 
 
     public void LoadLang(){
