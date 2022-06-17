@@ -201,17 +201,11 @@ MonoBehaviour:
   MessageText: {fileID: 696862981}
   badgeObject: {fileID: 1843912705}
   EndingPart: 2
-  GoodEndingText: Pemain menjadi anak kesayangan keluarga dan sangat disegani di
-    tengah tengah lingkungan masyarakat. Semua orang mengenal pemain sebagai seorang
-    remaja yang baik hati dan suka menolong sesama.
+  GoodEndingText: Endings.Part2.Good
   GoodEndingBadge: {fileID: 21300000, guid: 5c37ad03c8967474c9b88da499ec36cb, type: 3}
-  NeutralEndingText: 'Pemain tidak terlalu memiliki banyak teman, namun masih diterima
-    di tengah lingkungan masyarakat. Terkadang membuat masalah namun tidak sampai
-    berbuat sesuatu yang merugikan keluarga maupun temannya. '
+  NeutralEndingText: Endings.Part2.Neutral
   NeutralEndingBadge: {fileID: 21300000, guid: 0c6e613e44f07dc43a0f825560fa3021, type: 3}
-  BadEndingText: Pemain sering mendapat teguran baik dari tetangga atau sekolah dan
-    cenderung penyendiri. Oleh karena hal ini, pemain tidak memiliki banyak teman
-    dan terkenal karena kenakalannya.
+  BadEndingText: Endings.Part2.Bad
   BadEndingBadge: {fileID: 21300000, guid: 13e5f375175240e4ca82c498cf4e362c, type: 3}
 --- !u!4 &203135225
 Transform:
